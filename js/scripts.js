@@ -9,3 +9,18 @@ function makeBeep(number) {
   }
   return beeper;
 }
+function beepboop() {
+  let beepboopArray = [];
+  for(let i=1; i < 16; i++){
+    if (i === 3){
+      beepboopArray.push("wont you be my neighbor")
+    }else if(i === 2){
+      beepboopArray.push("boop");
+    } else if (i === 1) {
+      beepboopArray.push("beep");
+    } else {
+      beepboopArray.push(i);
+    }
+  }
+  return beepboopArray;
+}
