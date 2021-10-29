@@ -23,22 +23,25 @@ Copyright(c)_2021_ _Marisa Edgar_
 
 ## Tests
 Describe- BeepBoop
+Test: "It should convert numbers to strings"
+
+
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
 Expected Output: 0
 
-Test- To make sure the user has only entered numbers
+Test: To make sure the user has only entered numbers
 
 Return- If NaN prompt the user to enter number
 
-Test- If number contains 1 
+Test: If number contains 1 
 
 Return- "Beep"
 
-Test- If number contains 2
+Test: If number contains 2
 
 Return- "Boop"
 
-Test- If number contains 3
+Test: If number contains 3
 
 return- "Wont you be my neighbor"
