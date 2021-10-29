@@ -71,6 +71,8 @@ stringArray.forEach(function(letter) {
   }
 });
 const finalString = xArray.join(" ");
+
+ß
 function noInputtednumbers() {
   for (let i=0; i < arguments.length; i++) {
     if (arguments[i].trim().length === 0) {
