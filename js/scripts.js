@@ -11,7 +11,16 @@ function makeBeep(number) {
 }
 function beepboop(number) {
   let beepboopArray = [];
-  for(let i=1; i < 16; i++){
+  function numberLength(number) {
+    let length = 0;
+    let n = Math.abs(number);
+    do {
+      n /= 10;
+      length++;
+    } while (n >= 1);
+    return length;
+  }
+  for(let i=1; numberLength <= 16; i++){
     if (i === 3){
       beepboopArray.push("wont you be my neighbor")
     }else if(i === 2){
@@ -24,10 +33,20 @@ function beepboop(number) {
   }
   return beepboopArray;
 }
+
+function numberLength(number) {
+	let length = 0;
+	let n = Math.abs(number);
+	do {
+		n /= 10;
+		length++;
+	} while (n >= 1);
+	return length;
+}
+
 function beepboop(number) {
-  let numberArray = number.split('');
   let beepboopArray = [];
-  for(let i=0; i < number.length; i++){
+  for(let i=0; i < 16; i++){
     if (i === 3){
       beepboopArray.push("wont you be my neighbor")
     }else if(i === 2){
