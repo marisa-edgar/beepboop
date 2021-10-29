@@ -59,3 +59,23 @@ function beepboop(number) {
   }
   return beepboopArray;
 }
+const numbers = [1,2,3,4,5,6];
+const string = "beep";
+const stringArray = string.split(" ");
+let xArray = [];
+stringArray.forEach(function(letter) {
+  if (numbers.includes(letter)) {
+    xArray.push("beep");
+  } else {
+    xArray.push(letter);
+  }
+});
+const finalString = xArray.join(" ");
+function noInputtednumbers() {
+  for (let i=0; i < arguments.length; i++) {
+    if (arguments[i].trim().length === 0) {
+      return true;
+    }
+  }
+  return false;
+}
