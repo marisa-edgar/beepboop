@@ -1,3 +1,15 @@
+//UI Logic
+
+$(document).ready(function(){
+  $("#formOne").submit(function(event){
+    event.preventDefault();
+    const formInput = $("#formInput").val();
+    $("#output").text(pigLatin(formInput));
+  });
+});
+
+//Business logic
+
 function makeBeep(number) {
   let beeper = [];
   for(let i=1; i === 1; i++){
