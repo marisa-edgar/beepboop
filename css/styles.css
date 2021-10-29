@@ -1,0 +1,14 @@
+.btn {
+  color: #eaecef;
+  font-size: 2rem;
+  background-color:black;
+  width: 10%;
+  display: block;
+  margin: 1em auto;
+}
+
+.btn:hover {
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
